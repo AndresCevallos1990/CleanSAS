@@ -1,0 +1,1185 @@
+   /******************* HEADER *******************************/
+   .header {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     position: relative;
+     height: 100vh;
+     overflow: hidden;
+   }
+
+   .btnNigth {
+     width: 50px;
+     height: 50px;
+     border: none;
+     background: black;
+     border-radius: 50%;
+   }
+
+   .btnNigth:hover {
+     background: rgb(56, 225, 6);
+     transition: all 0.5s ease;
+   }
+
+   .btnNigth:not(hover) {
+     transition: all 0.5s ease;
+   }
+
+   .sun {
+     color: yellow;
+   }
+
+   .moon {
+     color: white;
+   }
+
+   .btnNigth svg {
+     font-size: 35px;
+   }
+
+   .contacto {
+     cursor: pointer;
+   }
+
+
+
+   .vidHeader {
+     position: absolute;
+     width: 150%;
+     top: -150px;
+     right: -100px;
+     z-index: 0;
+     height: 130%;
+     object-fit: cover;
+   }
+
+   .sectionHeaderShortcut {
+     position: fixed;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     width: 100%;
+     top: 0;
+     left: 0;
+     z-index: 99;
+     background: rgb(189, 255, 169);
+
+   }
+
+   .sectionHeader {
+     position: absolute;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     width: 100%;
+     top: 0;
+     left: 0;
+     z-index: 99;
+   }
+
+   .sectionHeader section,
+   .sectionHeaderShortcut section {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     width: 70%;
+     margin-top: 4%;
+   }
+
+   .sectionHeader {
+     z-index: 999999;
+   }
+
+   .sectionHeader section span,
+   .sectionHeader section a {
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     height: 50px;
+     font-family: "Baloo Bhaijaan 2", serif;
+     font-weight: 800;
+   }
+
+   .sectionHeader section span:hover,
+   .sectionHeader section a:hover,
+   .sectionHeaderShortcut section span:hover,
+   .sectionHeaderShortcut section a:hover {
+     color: rgb(56, 225, 6);
+     text-decoration: underline;
+     cursor: pointer;
+   }
+
+   .sectionHeaderShortcut section span,
+   .sectionHeaderShortcut section a {
+     text-align: center;
+     font-size: 20px;
+     color: black;
+     text-decoration: none;
+     font-weight: bold;
+     height: 50px;
+     font-family: "Baloo Bhaijaan 2", serif;
+   }
+
+   .sectionHeader a img {
+     width: 100px;
+     height: 100px;
+   }
+
+   .sectionHeaderShortcut a img {
+     width: 100px;
+     height: 100px;
+   }
+
+
+
+   .articleHeader {
+     width: 100%;
+     z-index: 9999;
+     position: relative;
+   }
+
+
+   .articleHeader div {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin-top: 5%
+   }
+
+   .articleHeader div div {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+
+   }
+
+   .articleHeader h1 {
+     color: white;
+     font-family: "Baloo Bhaijaan 2", serif;
+     font-weight: 600;
+     font-size: 70px;
+   }
+
+
+   .articleHeader span {
+     font-size: larger;
+   }
+
+   .divHeader {
+     display: flex;
+     justify-content: center;
+     z-index: 9999;
+     width: 100%;
+   }
+
+   .divHeader div {
+     display: flex;
+     justify-content: center;
+     width: 80%;
+     text-align: center;
+     margin-top: 3rem;
+     z-index: 9999;
+   }
+
+   .divHeader span {
+     font-size: 20px;
+     color: white;
+     z-index: 9999;
+     font-family: "Baloo Bhaijaan 2", serif;
+   }
+
+   .divHeaderDos {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     z-index: 9999;
+   }
+
+   .divHeaderDos div {
+     text-align: center;
+     background: #02f8ae;
+     padding: 10px 25px;
+     border-radius: 15px;
+     z-index: 9999;
+   }
+
+   .divHeaderDos div a {
+     font-size: large;
+     color: black;
+     text-decoration: none;
+   }
+
+   /*******************  Main  *************************/
+
+   .aboutUs {
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+     justify-content: space-evenly;
+
+   }
+
+   .aboutUs img {
+     border: white 1px solid;
+
+   }
+
+
+
+   .aboutUsText {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     text-align: center;
+     padding: 10% 0 10% 0;
+     width: 50%;
+   }
+
+   .aboutUsText span {
+     font-size: larger;
+     padding: 0 2rem;
+   }
+
+   .aboutUsText hr {
+     color: greenyellow;
+     background: greenyellow;
+   }
+
+
+   .aboutUsText span,
+   .aboutUsText h2 {
+     margin-bottom: 0.5rem;
+   }
+
+   .aboutUsText div {
+     display: flex;
+     justify-content: end;
+     width: 100%;
+     margin-right: 10%;
+   }
+
+   .aboutUsText div a {
+     background: rgb(56, 225, 6);
+     padding: 10px 30px;
+     color: black;
+     text-decoration: none;
+     border-radius: 15px;
+   }
+
+
+   .indexDos {
+     text-align: center;
+     background: rgb(207, 217, 223);
+   }
+
+   .indexDos h2 {
+    font-family: "Baloo Bhaijaan 2", serif;
+    font-size: 70px;
+     padding: 50px 0;
+   }
+
+   .indexDos section {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: space-evenly;
+     position: relative;
+   }
+
+   .indexDos article {
+     display: flex;
+     justify-content: space-evenly;
+     position: relative;
+   }
+
+   .indexDos section div,
+   .indexDos article div {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 50px;
+   }
+
+   .indexDos section div:hover,
+   .indexDos article div:hover {
+      transform: scale(1.1);
+      transition: all ease 500ms;
+   }
+
+   .indexDos section div:not(hover),
+   .indexDos article div:not(hover) {
+      transition: all ease 500ms;
+   }
+
+   .indexDos section div svg,
+   .indexDos article div svg {
+     font-size: 40px;
+     margin-bottom: 15px;
+     color: rgb(11, 168, 179);
+     font-family: "Baloo Bhaijaan 2", serif;
+
+   }
+
+
+   .indexDos section div span,
+   .indexDos article div span {
+     font-size: 25px;
+   }
+
+   .indexTres {
+     text-align: center;
+   }
+
+   .indexTres div {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
+
+   .indexTres div div {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+   }
+
+   .indexTres div div img {
+     width: 200%;
+     height: 100%;
+     object-fit: cover;
+   }
+
+   .article1,
+   .article2 {
+     display: flex;
+     flex-direction: column;
+     padding: 0 50px;
+   }
+
+   .article2 {
+     background: black;
+     color: white;
+   }
+
+   .article1 h2 {
+     margin-top: 20%;
+   }
+
+   .article2 h2 {
+     margin-top: 40%;
+   }
+
+   .indexTres div article strong {
+     margin-bottom: 15px;
+   }
+
+   .staffItems {
+     display: flex;
+     justify-content: space-evenly;
+     text-align: center;
+     flex-wrap: wrap;
+   }
+
+   .staffItems div {
+     display: flex;
+     flex-direction: column;
+     width: 200px;
+   }
+
+   .staffItems article {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+   }
+
+   .staffItems strong,
+   .staffItems span {
+     word-break: break-word;
+     max-width: 100%;
+   }
+
+   .staffArticle {
+     text-align: center;
+     margin-bottom: 3rem;
+   }
+
+
+   /******************* Others ***********************/
+
+   .arrowUp {
+     font-size: 50px;
+     position: fixed;
+     bottom: 5%;
+     right: 3%;
+     color: black;
+   }
+
+   .arrowUp:hover {
+     color: rgb(56, 225, 6);
+     transition: all ease 500ms;
+   }
+
+   .arrowUp:not(hover) {
+     transition: all ease 500ms;
+   }
+
+   .contact {
+     position: fixed;
+     display: flex;
+     width: 95%;
+     height: 95%;
+     top: 2.5%;
+     left: 2.5%;
+     background: white;
+     border-radius: 15px;
+     border: black solid;
+     z-index: 9999999;
+     overflow: hidden;
+
+   }
+
+   .contact section {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: center;
+     position: absolute;
+     top: 0;
+     left: 0;
+     margin-top: 5vh;
+   }
+
+   .contact section article {
+     background: rgb(56, 225, 6);
+     margin-right: 1rem;
+     border-radius: 5px;
+     height: 80vh;
+     color: white;
+     opacity: 0.8;
+   }
+
+   .mailIcon {
+     width: 50px;
+     height: 50px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     width: 100%;
+   }
+
+   .contact section article article {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     height: 60%;
+     width: 30vw;
+     text-align: center;
+     margin-top: 25%;
+   }
+
+   .mailIcon {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: center;
+   }
+
+   .mailIcon div {
+     width: 70px;
+     height: 70px;
+     border: solid white 3px;
+     border-radius: 50%;
+   }
+
+   .mailIcon div i {
+     font-size: 40px;
+   }
+
+   .contatsIcons {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: center;
+   }
+
+   .contatsIcons div {
+     width: 60px;
+     height: 60px;
+     border: solid white 3px;
+     border-radius: 50%;
+     margin: 0 5px;
+
+   }
+
+   .contatsIcons div i {
+     font-size: 30px;
+     padding: 5px;
+     font-size: 35px;
+   }
+
+   .formContact {
+     display: flex;
+     flex-direction: column;
+     height: 80vh;
+     background: white;
+     width: 30vw;
+     text-align: center;
+     border-radius: 5px;
+     opacity: 0.8;
+   }
+
+   .formContact form {
+     display: flex;
+     flex-direction: column;
+     background: white;
+     width: 30vw;
+     text-align: center;
+     border-radius: 5px;
+     opacity: 0.8;
+     margin-top: 10%;
+   }
+
+   .formContact form input,
+   .formContact form textarea {
+     width: 100%;
+     border: none;
+     border-bottom: 2px solid #ccc;
+     outline: none;
+     padding: 8px;
+     font-size: 16px;
+     transition: border-color 0.3s;
+   }
+
+   .formContact form input:focus,
+   .formContact form textarea:focus {
+     border-bottom: 2px solid rgb(56, 225, 6);
+   }
+
+   .formContact form textarea {
+     resize: none;
+     height: 100px;
+   }
+
+   .formContact div button {
+     background: rgb(56, 225, 6);
+     padding: 10px 20px;
+     border-radius: 10px;
+     margin-top: 1rem;
+   }
+
+   .imgContats {
+     width: 100%;
+     filter: brightness(50%);
+   }
+
+   .closeContact {
+     position: absolute;
+     top: 20px;
+     right: 40px;
+     font-size: 30px;
+     cursor: pointer;
+     color: white;
+     border: solid 2px white;
+     padding: 10px;
+     border-radius: 50px;
+   }
+
+   .closeContact:hover {
+     background: rgb(56, 225, 6);
+     transition: all ease 0.3s;
+   }
+
+   .closeContact:not(hover) {
+     transition: all ease 0.3s;
+   }
+
+   .componentClientes {
+     text-align: center;
+   }
+
+   .componentClientes div {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     margin: 5px;
+   }
+
+   .componentClientes div div {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     height: 150px;
+     border: solid black 1px;
+     background: rgba(56, 225, 6, 0.6);
+   }
+
+   .componentClientes div div img {
+     width: 200px;
+   }
+
+   .iconsContact {
+     display: flex;
+     flex-direction: column;
+     width: 50px;
+     position: fixed;
+     top: 50%;
+     right: 0;
+     width: 150px;
+   }
+
+   .whatsapp a,
+   .facebook a,
+   .linkedin a {
+     color: black;
+   }
+
+   .whatsapp {
+     background-color: rgb(0, 255, 0);
+     font-size: 30px;
+     padding: 5px 10px;
+     border-top-left-radius: 15px;
+     margin-left: 100px;
+   }
+
+   .whatsapp:hover {
+     margin-left: 80px;
+     transition: all ease 500ms;
+   }
+
+   .whatsapp:not(hover) {
+     transition: all ease 500ms;
+   }
+
+   .facebook {
+     background-color: rgb(0, 8, 255);
+     font-size: 30px;
+     padding: 5px 10px;
+     margin-left: 100px;
+   }
+
+   .facebook:hover {
+     margin-left: 80px;
+     transition: all ease 500ms;
+
+   }
+
+   .facebook:not(hover) {
+     margin-left: 100px;
+     transition: all ease 500ms;
+
+   }
+
+   .linkedin {
+     background-color: rgb(3, 138, 156);
+     font-size: 30px;
+     padding: 5px 10px;
+     border-bottom-left-radius: 15px;
+     margin-left: 100px;
+   }
+
+   .linkedin:hover {
+     margin-left: 80px;
+     transition: all ease 500ms;
+   }
+
+   .linkedin:not(hover) {
+     margin-left: 100px;
+     transition: all ease 500ms;
+   }
+
+   .componentJobs {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+
+
+   .componentHeaderJobs {
+     position: relative;
+     margin-bottom: 2rem;
+
+   }
+
+   .imgHeaterJobs {
+     width: 100%;
+     background: rgba(0, 0, 0, 0.5);
+   }
+
+   .componentHeaderJobs .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     pointer-events: none;
+   }
+
+   .componentHeaderJobs h1 {
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+     font-size: 60px;
+   }
+
+   .componentTrabajos {
+     background: black;
+   }
+
+   .componentTrabajos article {
+     display: flex;
+     flex-direction: column;
+     text-align: justify;
+     width: 70%;
+     margin: 0 auto;
+     text-align-last: center;
+
+   }
+
+   .componentTrabajos article span {
+     margin-bottom: 15px;
+     font-size: larger;
+     color: white;
+   }
+
+   .imgPart {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+
+   .componentHeaderJobs section {
+     display: flex;
+     justify-content: space-around;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     color: white;
+     z-index: 999999;
+   }
+
+   .componentHeaderJobs section div {
+     margin-top: 20px;
+   }
+
+   .componentHeaderJobs section a {
+     color: white;
+     text-decoration: none;
+     margin: 0 20px 0 0;
+   }
+
+   .imgLogoHeader {
+     width: 70px;
+   }
+
+   .componentImgJobs {
+     display: flex;
+     justify-content: center;
+     border-top: solid black 1px;
+   }
+
+   .componentImgJobs img {
+     width: 100px;
+     height: 100px;
+   }
+
+   .imgPrinJobs section {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 400px;
+     overflow: hidden;
+   }
+
+
+   /**********    FOOTER  **********/
+
+   .componentFooter {
+     display: grid;
+     grid-template-columns: 1fr 3fr;
+     height: 80vh;
+     overflow: hidden;
+     background: rgb(189, 255, 169);
+   }
+
+   .imgFooter {
+     width: 100%;
+   }
+
+
+
+   .componentFooter article section {
+     text-align: center;
+     margin-top: 5%;
+   }
+
+   .footerContact {
+     position: relative;
+   }
+
+   .footerContact section {
+     display: flex;
+     flex-direction: column;
+     width: 400px;
+     height: 100%;
+     margin-left: 50px;
+   }
+
+   .footerContact section div {
+     display: flex;
+     margin-bottom: 1rem;
+     color: black;
+   }
+
+   .footerContact section div i {
+     margin-right: 1rem;
+     font-size: larger;
+     color: rgba(56, 225, 6);
+     border: solid black 1px;
+     padding: 3px 10px;
+     border-radius: 40%;
+     color: black;
+   }
+
+
+
+   .footerContact section div a {
+     margin-right: 1rem;
+     font-size: larger;
+     color: black;
+     text-decoration: none;
+   }
+
+   .footerContact section div a:hover {
+     text-decoration: underline;
+   }
+
+   .footerContact section div article span {
+     color: white;
+     margin: 0 10px 0 0;
+   }
+
+   /********* SCROLL **********/
+
+
+   ::-webkit-scrollbar {
+     width: 15px;
+     background: black;
+   }
+
+   ::-webkit-scrollbar-track {
+     border: black;
+     box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+     border: rgb(0, 0, 0) solid 1px;
+   }
+
+   ::-webkit-scrollbar-thumb {
+     background: rgb(56, 225, 6);
+     border-radius: 10px;
+   }
+
+
+
+   /******* MODO BLACK  ************/
+
+   /******* Media q ***********/
+
+   .headerMobile {
+     display: none;
+   }
+
+   @media screen and (max-width: 1560px) {
+
+     .header {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       position: relative;
+       height: 110vh;
+       overflow: hidden;
+
+     }
+
+
+     .divHeaderDos div {
+       width: min-content;
+       text-align: center;
+       background: #37ff4b;
+       font-size: 50px;
+       padding: 10px 25px;
+       border-radius: 15px;
+       margin-top: 2rem;
+       z-index: 9999;
+     }
+
+   }
+
+   @media screen and (max-width: 1405px) {
+
+     .header {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       position: relative;
+       height: 100vh;
+       overflow: hidden;
+     }
+
+
+     .divHeaderDos div {
+       width: 250px;
+       text-align: center;
+       background: #37ff4b;
+       font-size: 30px;
+       border-radius: 15px;
+       padding: 0 0 10px 0;
+       z-index: 9999;
+     }
+
+     .sectionHeader section span,
+     .sectionHeader section a {
+       text-align: center;
+       color: white;
+       text-decoration: none;
+       height: 50px;
+       font-family: "Baloo Bhaijaan 2", serif;
+       font-weight: 800;
+       font-size: 18px;
+     }
+
+
+
+     .sectionHeaderShortcut section span,
+     .sectionHeaderShortcut section a {
+       text-align: center;
+       font-size: 18px;
+       color: black;
+       text-decoration: none;
+       font-weight: bold;
+       height: 50px;
+       font-family: "Baloo Bhaijaan 2", serif;
+     }
+
+     .aboutUs {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+     }
+
+     .aboutUs img {
+       margin-top: 30%;
+       width: 350px;
+     }
+   }
+
+   @media screen and (max-width: 1000px) {
+     .header {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       position: relative;
+       height: 100vh;
+       overflow: hidden;
+     }
+
+
+     .divHeaderDos div {
+       width: 450px;
+       text-align: center;
+       color: rgb(52, 52, 52);
+       background: #37ff4b;
+       font-size: 30px;
+       padding: 10px 25px;
+       border-radius: 15px;
+       border: rgb(0, 0, 0) solid 4px;
+       z-index: 9999;
+     }
+
+     .componentClientes div {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+     }
+
+     .indexDos h2 {
+       font-size: 50px;
+       padding: 50px 0;
+     }
+
+     .indexDos section div span,
+     .indexDos article div span {
+       font-size: 20px;
+     }
+
+
+     .vidHeader {
+       width: 200%;
+       position: absolute;
+       top: -250px;
+       left: -800px;
+       z-index: 0;
+       object-fit: cover;
+       height: 150%;
+     }
+
+   }
+
+
+
+   @media screen and (max-width: 800px) {
+
+     .header {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       position: relative;
+       height: 115vh;
+       overflow: hidden;
+       border: solid green;
+     }
+
+     .headerMobile {
+       display: flex;
+       flex-wrap: wrap;
+       z-index: 99999;
+       justify-content: space-around;
+       font-family: "Baloo Bhaijaan 2", serif;
+       font-weight: 600;
+       font-size: 50px;
+       height: 15%;
+     }
+
+     .divHeaderDos {
+       display: none;
+     }
+
+     .articleHeader h1 {
+       color: white;
+       font-family: "Baloo Bhaijaan 2", serif;
+       font-weight: 600;
+       font-size: 50px;
+     }
+
+     .header span {
+       font-size: medium;
+     }
+
+     #btnMenu {
+       background: rgb(56, 225, 6);
+     }
+
+     .headerMobile a img {
+       width: 100px;
+       height: 100px;
+     }
+
+     .headerMobile section {
+       display: flex;
+       width: 20%;
+       justify-content: space-around;
+       flex-wrap: wrap;
+     }
+
+     #bodyMobile {
+       background: rgb(189, 255, 169);
+     }
+
+     #bodyMobile a,
+     #bodyMobile span {
+       color: black;
+       text-decoration: none;
+     }
+
+
+
+     .divHeader div {
+       display: flex;
+       justify-content: center;
+       width: 70%;
+       text-align: center;
+       margin-top: rem
+     }
+
+     .sectionHeader,
+     .sectionHeaderShortcut {
+       display: none;
+     }
+
+     .vidHeader {
+       position: absolute;
+       top: -150px;
+       left: -450px;
+       z-index: 0;
+     }
+
+
+     .aboutUs img {
+       display: none;
+     }
+
+     .indexDos section {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       position: relative;
+     }
+
+     .indexDos h2 {
+       font-size: 30px;
+       padding: 50px 0;
+     }
+
+
+
+     .indexDos section div span,
+     .indexDos article div span {
+       font-size: 15px;
+     }
+
+     .indexTres div {
+       display: flex;
+       flex-wrap: wrap;
+     }
+
+     .componentFooter {
+       display: grid;
+       grid-template-columns: 2fr 3fr;
+       overflow: hidden;
+       background: rgb(189, 255, 169);
+       height: 500px;
+
+     }
+
+     .imgFooter {
+       display: none;
+     }
+
+     .componentClientes div div {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       height: 150px;
+       width: 150px;
+       border: solid black 1px;
+       background: rgba(56, 225, 6, 0.6);
+     }
+
+     .componentClientes div div img {
+       width: 100%;
+     }
+
+     .articleHeader div {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+     }
+
+     .aboutUsText {
+       width: 100%;
+     }
+
+     .indexTres div div img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+     }
+
+   }
