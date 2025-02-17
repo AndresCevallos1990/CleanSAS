@@ -13,12 +13,22 @@ const CustomProvider = ({ children }) => {
 
    useEffect(()=>{
 
-    const arrayImages = []
+    const arrayImages = [
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803345/uhgmmozxizqbtuqiee1h.jpg',
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803345/mhzm9oyoyt8jgthophaa.jpg',
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803345/bha2xhcdup5cu88rlzih.jpg',
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803345/zgakxnlvfhft5u4epkfe.jpg',
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803345/cxgqhp8j49lxngssaheh.jpg',
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803346/qmiq307aj7j3zz3pjjmo.jpg',//6
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803346/ud72wihy4o9ke2olwg0u.jpg',//8
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803346/qi44kspjjohqslpsxti8.jpg',//7
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803346/ungbvccl1ru0mhkwksh0.jpg',//9
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803346/apphh50usf5yqs94de4p.jpg',//10
+        'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803346/xkbvim3lzj5iezzhwj33.jpg'//11
+    ]
 
-    for(let i = 1; i<= 11; i++){
-        const image = `../../img/jobs/image (${i}).jpg`
-        arrayImages.push(image)
-    }
+
+    
 
     setJobs(arrayImages)
 

@@ -12,7 +12,7 @@ export const Contact = () => {
     const [subjectValue, setSubjectValue] = useState("")
     const [messageValue, setMessageValue] = useState("")
 
-    const background = '../../img/backgrounContacts.jpg'
+    const background = 'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803366/chhjwnl3dmziofrlojtj.jpg'
 
     const handleName = (e) => {
         const name = e.target.value

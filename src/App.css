@@ -1105,7 +1105,8 @@
 
      .vidHeader {
        position: absolute;
-       top: -150px;
+       width: 200%;
+       top: -250px;
        left: -450px;
        z-index: 0;
      }
@@ -1182,4 +1183,14 @@
        object-fit: cover;
      }
 
+   }
+
+   @media screen and (max-width: 600px) {
+    .vidHeader {
+      position: absolute;
+      width: 200%;
+      top: -50%;
+      left: -100%;
+      z-index: 0;
+    }
    }

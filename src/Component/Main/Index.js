@@ -50,7 +50,7 @@ export const Index = () => {
                         <Link to={'/porfolio'}>  VER MÁS</Link>
                     </div>
                     <section>
-                        <img src='../img/foto1.jpg' alt='' />
+                        <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803368/hqhmbwrjgvomeqczrpzz.jpg' alt='' />
                     </section>
                 </div>
 

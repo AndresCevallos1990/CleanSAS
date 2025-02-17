@@ -9,7 +9,7 @@ export const HeaderJobs = () => {
     return (
         <div className='componentHeaderJobs'>
             <section>
-                <Link to={'/'}><img className='imgLogoHeader' src={`/img/logo.png`} /></Link>
+                <Link to={'/'}><img className='imgLogoHeader' src={`https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/bt0jfxx9qdysrycbpfqc.png`} /></Link>
                 <div>
                     <Link to={'/'}>Home</Link>
                     <Link to="/#Servicios">Servicios</Link>

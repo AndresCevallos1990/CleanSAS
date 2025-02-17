@@ -12,7 +12,7 @@ export const HeaderMobile = () => {
     return (
         <div className='headerMobile'>
 
-            <Link to={'/'}><img src={`/img/logo.png`} /></Link>
+            <Link to={'/'}><img src={`https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/bt0jfxx9qdysrycbpfqc.png`} /></Link>
             <section>
                 <Dropdown>
                     <Dropdown.Toggle variant="success" id="btnMenu">

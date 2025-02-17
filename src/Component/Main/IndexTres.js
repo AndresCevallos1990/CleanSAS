@@ -5,7 +5,7 @@ export const IndexTres = () => {
         <div className='indexTres'>
             <div>
                 <div>
-                    <img src='../img/foto2.jpeg' alt='' />
+                    <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803368/ne6moujc8fduwggzn1eh.jpg' alt='' />
                 </div>
                 <article className='article1'>
                     <h2>OBJETIVO</h2>
@@ -22,7 +22,7 @@ export const IndexTres = () => {
                     <strong>Nuestro compromiso es proporcionar un servicio rápido y eficiente, minimizando los riesgos ambientales y cumpliendo con los más altos estándares de seguridad y calidad.</strong>
                 </article>
                 <div>
-                    <img src='../img/foto3.jpeg' alt='' />
+                    <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803368/yf7nskrnndfjycj5avfc.jpg' alt='' />
                 </div>
 
             </div>

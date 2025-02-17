@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const FooterMain = () => {
 
-    const imgFooterClean = `../img/footer.jpg`
+    const imgFooterClean = `https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803367/kjrsbsw6xvqpw2tuqcpr.jpg`
 
     const phoneNumber = '+5492996017182'
     const message = 'Hola! 🤚 Me gustaria obtener mas informacion sobre Clean Soluciones Petroleras.'
