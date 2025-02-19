@@ -97,7 +97,7 @@
      text-decoration: none;
      height: 50px;
      font-family: "Baloo Bhaijaan 2", serif;
-     font-weight: 800;
+     font-weight: 12000;
    }
 
    .sectionHeader section span:hover,
@@ -268,7 +268,7 @@
 
    .indexDos {
      text-align: center;
-     background: rgb(207, 217, 223);
+     background: rgb(189, 255, 169);
    }
 
    .indexDos h2 {
@@ -353,7 +353,7 @@
 
    .article2 {
      background: black;
-     color: white;
+     color: white;  
    }
 
    .article1 h2 {
@@ -379,6 +379,9 @@
      display: flex;
      flex-direction: column;
      width: 200px;
+     background: rgb(189, 255, 169);
+     padding: 1rem 0 0 0;
+     box-shadow: black 5px 5px 10px;
    }
 
    .staffItems article {
@@ -386,6 +389,17 @@
      flex-direction: column;
      text-align: center;
      align-items: center;
+     border-radius: 10px ;
+   }
+   
+   .staffItems article a{
+     text-decoration: none;
+     font-size: 20px;
+     color: black;
+   }
+
+   .staffItems article a svg {
+     font-size: 50px;
    }
 
    .staffItems strong,
@@ -398,6 +412,8 @@
      text-align: center;
      margin-bottom: 3rem;
    }
+
+
 
 
    /******************* Others ***********************/
