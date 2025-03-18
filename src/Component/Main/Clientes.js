@@ -15,20 +15,22 @@ export const Clientes = () => {
         'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803320/speeb2qs2kuagpeo4kpg.png',
         'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803319/lvdesvzfzfg2guyoplwg.png',
         'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803321/m0d8hchm9unn0vbnxjmj.png',
-
     ]
     return (
-        <div className='componentClientes'>
-            <h1>NUESTROS CLIENTES</h1>
-            <div>
-                {
-                    arrayImg?.map((item) => (
-                        <div>
-                            <img src={item} alt='' />
-                        </div>
-                    ))
-                }
+        <div className=''>
+            <div className='componentClientes'>
+                <h1>NUESTROS CLIENTES</h1>
+                <div>
+                    {
+                        arrayImg?.map((item) => (
+                            <div>
+                                <img src={item} alt='' />
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
+
         </div>
     )
 }

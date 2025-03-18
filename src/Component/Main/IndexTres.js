@@ -1,10 +1,15 @@
 import React from 'react'
+import Aos from 'aos'
 
 export const IndexTres = () => {
+
+    Aos.init({ duration: 800 })
+
+
     return (
         <div className='indexTres'>
             <div>
-                <div>
+                <div data-aos="fade-up-right">
                     <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803368/ne6moujc8fduwggzn1eh.jpg' alt='' />
                 </div>
                 <article className='article1'>
@@ -21,7 +26,7 @@ export const IndexTres = () => {
                     <strong>Contamos con un equipo de profesionales altamente capacitados y una guardia permanente, lo que nos permite operar de manera continua, las 24 horas del día, los 365 días del año.</strong>
                     <strong>Nuestro compromiso es proporcionar un servicio rápido y eficiente, minimizando los riesgos ambientales y cumpliendo con los más altos estándares de seguridad y calidad.</strong>
                 </article>
-                <div>
+                <div data-aos="fade-left">
                     <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803368/yf7nskrnndfjycj5avfc.jpg' alt='' />
                 </div>
 

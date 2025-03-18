@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'aos/dist/aos.css'
 import CustomProvider, { contexto } from './Provider';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Index } from './Component/Main/Index';

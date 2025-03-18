@@ -38,7 +38,7 @@ export const Index = () => {
             <Header />
             <div>
 
-                <div className='aboutUs'>
+                <div  data-aos="fade-down" className='aboutUs'>
                     <div className='aboutUsText'>
                         <h2>¿Quienes somos?</h2>
                         {/* <hr style={{ backgroundColor: 'red', height: '2px', border: 'none' }} /> */}
@@ -66,9 +66,9 @@ export const Index = () => {
 
             <div><IndexTres /></div>
 
-            <hr></hr>
+            {/* <hr></hr>
 
-            <div><Staff /></div>
+            <div><Staff /></div> */}
 
             <hr></hr>
 

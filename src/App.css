@@ -1,3 +1,7 @@
+.App{
+  overflow: hidden;
+}   
+   
    /******************* HEADER *******************************/
    .header {
      display: flex;
@@ -272,8 +276,8 @@
    }
 
    .indexDos h2 {
-    font-family: "Baloo Bhaijaan 2", serif;
-    font-size: 70px;
+     font-family: "Baloo Bhaijaan 2", serif;
+     font-size: 70px;
      padding: 50px 0;
    }
 
@@ -299,13 +303,13 @@
 
    .indexDos section div:hover,
    .indexDos article div:hover {
-      transform: scale(1.1);
-      transition: all ease 500ms;
+     transform: scale(1.1);
+     transition: all ease 500ms;
    }
 
    .indexDos section div:not(hover),
    .indexDos article div:not(hover) {
-      transition: all ease 500ms;
+     transition: all ease 500ms;
    }
 
    .indexDos section div svg,
@@ -353,7 +357,7 @@
 
    .article2 {
      background: black;
-     color: white;  
+     color: white;
    }
 
    .article1 h2 {
@@ -389,10 +393,10 @@
      flex-direction: column;
      text-align: center;
      align-items: center;
-     border-radius: 10px ;
+     border-radius: 10px;
    }
-   
-   .staffItems article a{
+
+   .staffItems article a {
      text-decoration: none;
      font-size: 20px;
      color: black;
@@ -602,6 +606,48 @@
    .closeContact:not(hover) {
      transition: all ease 0.3s;
    }
+
+
+   .row {
+     display: flex;
+     width: 100%;
+     border: solid black 1px;
+     height: 200px;
+     background: rgba(56, 225, 6, 0.6);
+
+   }
+
+   .row div {
+     width: 0;
+     flex-grow: 1;
+     object-fit: cover;
+     transition: all ease 0.3s;
+     opacity: 0.8;
+   }
+
+   .row div:hover {
+     width: 100px;
+     opacity: 1;
+     filter: contrast(120%);
+     background: black;
+
+   }
+
+   .row div img {
+     width: 100%;
+     height: 100%;
+   }
+
+   .carrousel div {
+     display: flex;
+     overflow: hidden;
+   }
+
+   .carrousel div img {
+     width: 100%;
+   }
+
+
 
    .componentClientes {
      text-align: center;
@@ -1202,11 +1248,11 @@
    }
 
    @media screen and (max-width: 600px) {
-    .vidHeader {
-      position: absolute;
-      width: 200%;
-      top: -50%;
-      left: -100%;
-      z-index: 0;
-    }
+     .vidHeader {
+       position: absolute;
+       width: 200%;
+       top: -50%;
+       left: -100%;
+       z-index: 0;
+     }
    }
