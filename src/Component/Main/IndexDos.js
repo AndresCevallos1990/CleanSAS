@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesUp, faCheck, faEarthAmericas, faFire, faLaptopMedical, faPaintbrush, faSeedling, faWeightHanging } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesUp, faCheck, faEarthAmericas, faFire, faLaptopMedical, faPaintbrush, faSeedling, faWeightHanging, faDoorClosed } from '@fortawesome/free-solid-svg-icons'
 import Aos from 'aos'
 
 
@@ -13,6 +13,7 @@ export const IndexDos = () => {
 
     return (
         <div className='indexDos'>
+
             <h2>NUESTROS SERVICIOS</h2>
 
             <section className='container'>
@@ -40,8 +41,6 @@ export const IndexDos = () => {
                     <FontAwesomeIcon icon={faCheck} />
                     <span>Detección de interferencias</span>
                 </div>
-            </section>
-            <article className='container'>
                 <div data-aos="fade-up">
                     <FontAwesomeIcon icon={faAnglesUp} />
                     <span>Relevamientos aéreos con drones</span>
@@ -50,7 +49,11 @@ export const IndexDos = () => {
                     <FontAwesomeIcon icon={faEarthAmericas} />
                     <span>Consultoría ambiental</span>
                 </div>
-            </article>
+                <div data-aos="fade-up">
+                    <FontAwesomeIcon icon={faDoorClosed} />
+                    <span>Trabajo en espacio confinado</span>
+                </div>
+            </section>
 
         </div>
     )

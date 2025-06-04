@@ -2,6 +2,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'aos/dist/aos.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import CustomProvider, { contexto } from './Provider';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Index } from './Component/Main/Index';
@@ -13,7 +15,7 @@ import { Trabajos } from './Component/Main/Trabajos';
 function App() {
 
   const { constacUs } = useContext(contexto)
- 
+
 
 
 
@@ -27,7 +29,7 @@ function App() {
           <Route path='/porfolio' element={<Trabajos />} />
           <Route path='/:id' element={<Index />} />
         </Routes>
-
+        <ToastContainer />
       </BrowserRouter>
     </div>
   );

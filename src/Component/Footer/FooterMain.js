@@ -33,7 +33,7 @@ export const FooterMain = () => {
 
             <article>
                 <section>
-                    <h2>Contactanos</h2>
+                    <h2>CONTÁCTANOS</h2>
                     <h4>Hace tu consulta desde tu servidor favorito</h4>
                 </section>
 
@@ -49,7 +49,7 @@ export const FooterMain = () => {
                                 <Link to={`tel:${phone1}`} target="_blank" rel="noopener noreferrer">
                                     {phone1}
                                 </Link>
-                                <span className='separadorLinks'>/</span>
+                                <span className='separadorLinks'>|</span>
                                 <Link to={`tel:${phone2}`} target="_blank" rel="noopener noreferrer">
                                     {phone2}
                                 </Link>

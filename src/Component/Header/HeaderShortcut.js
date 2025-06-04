@@ -9,14 +9,14 @@ export const HeaderShortcut = () => {
     return (
         <div>
             <section className='sectionHeaderShortcut'>
-                <Link to={'/'}><img src={`https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/bt0jfxx9qdysrycbpfqc.png`} /></Link>
+                <Link to={'/'}><img src={`https://res.cloudinary.com/dt4unqzpv/image/upload/v1748972160/bt0jfxx9qdysrycbpfqc_nmnxbw.png`} /></Link>
                 <section>
-                    <Link to={'/'}>Home</Link>
-                    <a href="#Servicios">Servicios</a>
-                    <a href="#Clientes">Clientes</a>
-                    <a href="#Sobre-nosotros">Sobre Nosotros</a>
-                    <strong onClick={() => updateContactUs(!constacUs)} className='contacto'>Contacto</strong>
-                    <Link to={'/porfolio'}>Trabajos</Link>
+                    <Link to={'/'}>HOME</Link>
+                    <a href="#Servicios">SERVICIOS</a>
+                    <a href="#Clientes">CLIENTES</a>
+                    <a href="#Sobre-nosotros">NOSOTROS</a>
+                    <span onClick={() => updateContactUs(!constacUs)} className='contacto'>CONTACTO</span>
+                    <Link to={'/porfolio'}>TRABAJOS</Link>
                 </section>
             </section>
         </div>

@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 import { IndexDos } from './IndexDos'
 import { IndexTres } from './IndexTres'
 import { Header } from '../Header/Header'
-import { Staff } from './Staff'
-import { Clientes } from './Clientes'
 import { FooterMain } from '../Footer/FooterMain'
 import Network from '../Others/Network'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { Clientess } from './Clientess'
 
 export const Index = () => {
 
@@ -37,52 +36,50 @@ export const Index = () => {
         <div id='Inicio'>
             <Header />
             <div>
-
-                <div  data-aos="fade-down" className='aboutUs'>
-                    <div className='aboutUsText'>
-                        <h2>¿Quienes somos?</h2>
-                        {/* <hr style={{ backgroundColor: 'red', height: '2px', border: 'none' }} /> */}
+                <br></br><br></br><br></br>
+                <div className='aboutUs'>
+                    <div data-aos="fade-down" className='aboutUsText'>
+                        <h2>¿QUIÉNES SOMOS?</h2>
+                        <br></br>
+                        <article ></article>
+                        <br></br>
                         < span>Somos CLEAN Soluciones Petroleras, una empresa dedicada a brindar soluciones en reacondicionamientos de instalaciones petroleras.</span>
                         < span>Nos enorgullece estar trabajando con importantes compañías del sector, brindando soluciones efectivas y contribuyendo al óptimo funcionamiento de sus instalaciones.</span>
                         < span>Nuestro personal cuenta con más de 20 años de experiencia en el sector y está conformado por un equipo interdisciplinario altamente capacitado en el área de saneamiento y reacondicionamiento de instalaciones petroleras.</span>
                         < span>Estamos comprometidos en ofrecer servicios de alta calidad que cumplan con los más exigentes estándares de seguridad, eficiencia y cumplimiento normativo.</span>
-                        <hr></hr>
-                        <Link to={'/porfolio'}>  VER MÁS</Link>
+                        <br></br>
+                        <div className='btnAboutUs'><Link to='/porfolio'>NUESTROS TRABAJOS</Link></div>
                     </div>
                     <section>
-                        <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803368/hqhmbwrjgvomeqczrpzz.jpg' alt='' />
+                        <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1748957245/WhatsApp_Image_2025-06-02_at_22.58.06_l63sat.jpg' alt='' />
                     </section>
                 </div>
 
             </div>
-
-            <hr></hr>
-
-            <div id='Servicios'>
+            
+            <div style={{height: '50px'}} id='Servicios'></div>
+            <br></br><br></br><br></br>
+            <div>
                 <IndexDos />
             </div>
+            <div style={{height: '50px'}} id='Sobre-nosotros'></div>
 
-            <hr id='Sobre-nosotros'></hr>
-
+            <br></br><br></br><br></br>
             <div><IndexTres /></div>
+            <div style={{height: '150px'}} id='Clientes'></div>
 
-            {/* <hr></hr>
 
-            <div><Staff /></div> */}
 
-            <hr></hr>
-
-            <div id='Clientes'><Clientes /></div>
-
-            <hr id='Contactate'></hr>
+            <div ><Clientess /></div>
+            <div style={{height: '50px'}} id='Contactate'></div>
 
             <FooterMain />
 
-            <a href='#Inicio'> <FontAwesomeIcon  className='arrowUp' icon={faCircleArrowUp} /></a>
-           
+            <a href='#Inicio'> <FontAwesomeIcon className='arrowUp' icon={faCircleArrowUp} /></a>
 
-        {showShortcut && <Network />}
+
+            {showShortcut && <Network />}
 
         </div>
-    )   
+    )
 }

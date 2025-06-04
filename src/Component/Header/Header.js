@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HeaderShortcut } from './HeaderShortcut';
 import { HeaderIcons } from './HeaderIcons';
 import { HeaderMobile } from './HeaderMobile';
+import { HeaderShortMobilecut } from './HeaderShortMobilecut';
 
 export const Header = () => {
     const [showShortcut, setShowShortcut] = useState(false);
@@ -39,8 +40,7 @@ export const Header = () => {
                 className='vidHeader'
             />
             <HeaderIcons />
-            <HeaderMobile />
-
+            <HeaderMobile/>
 
             {showShortcut && <HeaderShortcut />}
 

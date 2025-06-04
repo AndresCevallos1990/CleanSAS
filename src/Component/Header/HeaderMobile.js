@@ -7,25 +7,26 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 export const HeaderMobile = () => {
 
-    const { updateContactUs, constacUs, nigthMode, updateNigthMode } = useContext(contexto)
+    const { updateContactUs, constacUs } = useContext(contexto)
 
     return (
         <div className='headerMobile'>
 
-            <Link to={'/'}><img src={`https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/bt0jfxx9qdysrycbpfqc.png`} /></Link>
+            <Link to={'/'}><img src={`https://res.cloudinary.com/dt4unqzpv/image/upload/v1748972160/bt0jfxx9qdysrycbpfqc_nmnxbw.png`} /></Link>
             <section>
                 <Dropdown>
                     <Dropdown.Toggle variant="success" id="btnMenu">
                         <i class="bi bi-list"></i>
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu id='bodyMobile'>
-                        <Dropdown.Item ><Link to={'/'}>Home</Link></Dropdown.Item>
-                        <Dropdown.Item ><a href="#Servicios">Servicios</a></Dropdown.Item>
-                        <Dropdown.Item ><a href="#Clientes">Clientes</a></Dropdown.Item>
-                        <Dropdown.Item ><a href="#Sobre-nosotros">Sobre Nosotros</a></Dropdown.Item>
-                        <Dropdown.Item ><span onClick={() => updateContactUs(!constacUs)} className='contacto'>Contacto</span></Dropdown.Item>
-                        <Dropdown.Item ><Link to={'/porfolio'}>Trabajos</Link></Dropdown.Item>
+                    <Dropdown.Menu>
+                        <div className='bodyMobile'><Link to={'/'}>HOME</Link>
+                            <a href="#Servicios">SERVICIOS</a>
+                            <a href="#Clientes">CLIENTES</a>
+                            <a href="#Sobre-nosotros">NOSOTROS</a>
+                            <span onClick={() => updateContactUs(!constacUs)} className='contacto'>CONTACTO</span>
+                            <Link to={'/porfolio'}>TRABAJOS</Link>
+                        </div>
                     </Dropdown.Menu>
                 </Dropdown>
 
