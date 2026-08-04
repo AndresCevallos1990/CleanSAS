@@ -8,6 +8,7 @@ import Network from '../Others/Network'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { Clientess } from './Clientess'
+import Procedimiento from './Procedimiento'
 
 export const Index = () => {
 
@@ -51,27 +52,31 @@ export const Index = () => {
                         <div className='btnAboutUs'><Link to='/porfolio'>NUESTROS TRABAJOS</Link></div>
                     </div>
                     <section>
-                        <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1748957245/WhatsApp_Image_2025-06-02_at_22.58.06_l63sat.jpg' alt='' />
+                        <img src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1749058388/WhatsApp_Image_2025-06-02_at_22.58.06_hdrtp8.jpg' alt='' />
                     </section>
                 </div>
 
             </div>
-            
-            <div style={{height: '50px'}} id='Servicios'></div>
+
+            <div style={{ height: '50px' }} id='Servicios'></div>
             <br></br><br></br><br></br>
             <div>
                 <IndexDos />
             </div>
-            <div style={{height: '50px'}} id='Sobre-nosotros'></div>
+            <div style={{ height: '50px' }} id='Sobre-nosotros'></div>
 
             <br></br><br></br><br></br>
             <div><IndexTres /></div>
-            <div style={{height: '150px'}} id='Clientes'></div>
 
+            <br></br><br></br>
+            
 
+            <br></br><br></br>  
+            <div><Procedimiento /></div>
+            <div style={{ height: '150px' }} id='Procedimiento'></div>
 
             <div ><Clientess /></div>
-            <div style={{height: '50px'}} id='Contactate'></div>
+            <div style={{ height: '50px' }} id='Contactate'></div>
 
             <FooterMain />
 

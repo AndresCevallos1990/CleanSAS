@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { HeaderJobs } from '../Header/HeaderJobs'
-import ImageMax from '../Others/ImageMax'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { ImgJobs } from '../Others/ImgJobs'
 import GaleryMax from '../Others/GaleryMax'
 
@@ -20,6 +17,7 @@ export const Trabajos = () => {
     useEffect(() => {
 
         const arrayImages = [
+            "https://res.cloudinary.com/dt4unqzpv/image/upload/v1749493372/WhatsApp_Image_2025-06-09_at_15.08.33_b71qqa.jpg",
             "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748966942/WhatsApp_Image_2025-06-03_at_13.08.04_mo1dem.jpg",
             'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803345/uhgmmozxizqbtuqiee1h.jpg',
             'https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803345/mhzm9oyoyt8jgthophaa.jpg',
@@ -41,11 +39,13 @@ export const Trabajos = () => {
             "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748965069/WhatsApp_Image_2025-06-02_at_23.05.23_r30mhd.jpg",
             "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748965069/WhatsApp_Image_2025-06-02_at_23.05.23_1_ttnopc.jpg",
             "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748957574/WhatsApp_Image_2025-06-02_at_23.01.28_dircgp.jpg",
-            "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748957245/WhatsApp_Image_2025-06-02_at_22.58.06_l63sat.jpg",
+            "https://res.cloudinary.com/dt4unqzpv/image/upload/v1749058388/WhatsApp_Image_2025-06-02_at_22.58.06_hdrtp8.jpg",
             "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748972161/WhatsApp_Image_2025-06-02_at_22.55.31_q0fjda.jpg",
             "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748972162/WhatsApp_Image_2025-06-02_at_22.54.14_iicsng.jpg",
             "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748972160/WhatsApp_Image_2025-06-02_at_22.56.19_waydk2.jpg",
-            "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748972159/WhatsApp_Image_2025-06-02_at_22.56.19_1_qfnbpj.jpg"
+            "https://res.cloudinary.com/dt4unqzpv/image/upload/v1748972159/WhatsApp_Image_2025-06-02_at_22.56.19_1_qfnbpj.jpg",
+            "https://res.cloudinary.com/dt4unqzpv/image/upload/v1749057173/WhatsApp_Image_2025-06-04_at_12.06.23_asxozu.jpg",
+            "https://res.cloudinary.com/dt4unqzpv/image/upload/v1749057173/WhatsApp_Image_2025-06-04_at_12.06.22_wphyu1.jpg"
 
         ]
 

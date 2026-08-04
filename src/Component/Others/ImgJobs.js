@@ -56,8 +56,8 @@ export const ImgJobs = ({ item, changeIndex, indexImg }) => {
 
 
 
-            <button disabled={currenPage === pages - 1} onClick={() => updateIndex(currenPage + 1)} className=""><FontAwesomeIcon icon={faChevronRight} /></button>
-            <button disabled={currenPage === pages - 1} onClick={() => updateIndex(pages)} className=""><FontAwesomeIcon icon={faAnglesRight} /></button>
+            <button disabled={currenPage === pages - 1} onClick={() => updateIndex(currenPage + 1)} className="deleteVMovil"><FontAwesomeIcon icon={faChevronRight} /></button>
+            <button disabled={currenPage === pages - 1} onClick={() => updateIndex(pages)} className="deleteVMovil"><FontAwesomeIcon icon={faAnglesRight} /></button>
         </div>
     );
 };
