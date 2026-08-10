@@ -390,133 +390,133 @@
   }
 }
 
-.indexTres {
-  text-align: center;
-}
+  .indexTres {
+    text-align: center;
+  }
 
-.indexTres div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  .indexTres div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.indexTres div div {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
+  .indexTres div div {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 
-.article1 section,
-.article2 section,
-.aboutUs article {
-  height: 5px;
-  width: 40%;
-  background: rgb(40 173 0);
-  margin: 0 auto;
-  border-radius: 15px;
-}
+  .article1 section,
+  .article2 section,
+  .aboutUs article {
+    height: 5px;
+    width: 40%;
+    background: rgb(40 173 0);
+    margin: 0 auto;
+    border-radius: 15px;
+  }
 
-.firstDiv,
-.secondDiv {
-  height: 500px;
-  overflow: hidden;
-}
+  .firstDiv,
+  .secondDiv {
+    height: 500px;
+    overflow: hidden;
+  }
 
-.firstDiv img {
-  width: 200%;
-  height: 100%;
-  object-fit: cover;
-}
+  .firstDiv img {
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.secondDiv {
-  height: 700px;
-}
+  .secondDiv {
+    height: 700px;
+  }
 
-.secondDiv div {
-  position: relative;
-  width: 100%;
-}
+  .secondDiv div {
+    position: relative;
+    width: 100%;
+  }
 
-.secondDiv div img {
-  object-fit: cover;
-  margin-top: 50px;
-  height: 105%;
-}
+  .secondDiv div img {
+    object-fit: cover;
+    margin-top: 50px;
+    height: 105%;
+  }
 
-.article1,
-.article2 {
-  width: 100%;
-}
+  .article1,
+  .article2 {
+    width: 100%;
+  }
 
-.article1 div,
-.article2 div {
-  display: flex;
-  flex-direction: column;
-  padding: 0 100px;
-}
+  .article1 div,
+  .article2 div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+  }
 
-.article2 {
-  display: flex;
-  flex-direction: column;
-  background: black;
-  color: white;
-}
+  .article2 {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+  }
 
-.article1 h2 {
-  margin-top: 10%;
-}
+  .article1 h2 {
+    margin-top: 10%;
+  }
 
-.article2 h2 {
-  margin-top: 20%;
-}
+  .article2 h2 {
+    margin-top: 20%;
+  }
 
-.indexTres div article span {
-  margin-bottom: 15px;
-}
+  .indexTres div article span {
+    margin-bottom: 15px;
+  }
 
-.staffItems {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  flex-wrap: wrap;
-}
+  .staffItems {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+  }
 
-.staffItems div {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  background: rgb(40 173 0);
-  padding: 1rem 0 0 0;
-  box-shadow: black 5px 5px 10px;
-}
+  .staffItems div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background: rgb(40 173 0);
+    padding: 1rem 0 0 0;
+    box-shadow: black 5px 5px 10px;
+  }
 
-.staffItems article {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
-}
+  .staffItems article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+  }
 
-.staffItems article a {
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-}
+  .staffItems article a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
 
-.staffItems article a svg {
-  font-size: 50px;
-}
+  .staffItems article a svg {
+    font-size: 50px;
+  }
 
-.staffItems strong,
-.staffItems span {
-  word-break: break-word;
-  max-width: 100%;
-}
+  .staffItems strong,
+  .staffItems span {
+    word-break: break-word;
+    max-width: 100%;
+  }
 
-.staffArticle {
-  text-align: center;
-  margin-bottom: 3rem;
-}
+  .staffArticle {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 
 /******************* Others ***********************/
 
@@ -944,7 +944,7 @@
 .componentHeaderJobs {
   position: relative;
   margin-bottom: 2rem;
-  background-image: url("https://res.cloudinary.com/drfdelucd/image/upload/v1786374286/ec02b641-2204-4eff-8760-ee31e42c1c50_zhlw3k.png");
+  background-image: url("https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/cwhxn2eetjigejqeqi4h.jpg");
   background-size: cover;
 }
 
@@ -1437,6 +1437,24 @@
 
 .headerMobile {
   display: none;
+}
+
+@media screen and (max-width: 2100px) {
+.firstDiv,
+  .secondDiv {
+    height: 600px;
+  }
+  .secondDiv div img {
+    width: 250%;
+    object-fit: cover;
+    transform: translate(-15%, -8%);
+  }
+  .article1 {
+    padding: 50px 0;
+  }
+  .article1 h2 {
+    margin-top: 1px;
+  }
 }
 
 @media screen and (max-width: 1560px) {
@@ -1944,7 +1962,7 @@
     display: block;
     position: relative;
     margin-bottom: 2rem;
-    background-image: url("https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/cwhxn2eetjigejqeqi4h.jpg");
+  background-image: url("https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/cwhxn2eetjigejqeqi4h.jpg");
     background-size: cover;
     background-position: -200px center;
   }

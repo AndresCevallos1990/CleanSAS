@@ -9,7 +9,7 @@ const Procedimiento = () => {
             icono: <i class="bi bi-telephone-inbound"></i>
         },
         {
-            nombre: '2. Evaluación y Diagnóstico',
+            nombre: '2. Confección del presupuesto',
             descripcion: 'Realizamos una evaluación exhaustiva de las instalaciones petroleras para identificar áreas que requieren reacondicionamiento y saneamiento. Nuestro equipo de expertos analiza el estado actual y determina las necesidades específicas del proyecto.',
             icono: <i class="bi bi-clipboard2-pulse-fill"></i>
         },
