@@ -65,7 +65,7 @@ export const IndexDos = () => {
             descripcion: "Asesoramiento y cumplimiento normativo."
         },
         {
-            img: "https://res.cloudinary.com/dt4unqzpv/image/upload/v1749489378/esp.conf_tedaor.png",
+            img: "https://res.cloudinary.com/drfdelucd/image/upload/v1786380868/EC_zpqtee.png",
             titulo: "Espacios confinados",
             descripcion: "Trabajos especializados con personal certificado."
         }
