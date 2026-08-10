@@ -2,6 +2,26 @@
   overflow: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /************************ HEADER *******************************/
 .header {
   display: flex;
@@ -26,16 +46,12 @@
 
 .vidHeader {
   position: absolute;
+  width: 150%;
   top: -150px;
   right: -100px;
   z-index: 0;
   height: 130%;
   object-fit: cover;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.45);
 }
 
 .sectionHeaderShortcut {
@@ -347,7 +363,7 @@
 }
 
 .servicio p {
-  font-size: 15 px;
+  font-size: 15px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -944,7 +960,7 @@
 .componentHeaderJobs {
   position: relative;
   margin-bottom: 2rem;
-  background-image: url("https://res.cloudinary.com/drfdelucd/image/upload/v1786374286/ec02b641-2204-4eff-8760-ee31e42c1c50_zhlw3k.png");
+  background-image: url("https://res.cloudinary.com/dt4unqzpv/image/upload/v1739803369/cwhxn2eetjigejqeqi4h.jpg");
   background-size: cover;
 }
 
@@ -1623,6 +1639,7 @@
     overflow: hidden;
     min-height: 500px;
   }
+
   .componentFooter img {
     width: 100%;
   }
@@ -1785,20 +1802,6 @@
     background-color: #37ff4b79;
     color: black;
   }
-
-  .galleryCinematic__stage {
-    width: 82vw;
-    height: 68vh;
-  }
-  .galleryCinematic__arrow--left {
-    left: 15px;
-  }
-  .galleryCinematic__arrow--right {
-    right: 15px;
-  }
-  .galleryCinematic__filmstripTrack {
-    justify-content: flex-start;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1820,11 +1823,6 @@
     font-size: 50px;
     height: 15%;
     position: relative;
-  }
-
-  .headerMobile a{
-    position: absolute;
-    left: 20%;
   }
   .headerMobileMobile {
     display: fixed;
@@ -1856,9 +1854,6 @@
     width: 20%;
     justify-content: space-around;
     flex-wrap: wrap;
-    position: fixed;
-    right: 0;
-    
   }
   .bodyMobile {
     display: flex;
@@ -1908,15 +1903,8 @@
     overflow: hidden;
     min-height: 500px;
   }
-  .footerContact {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-  .footerContact a {
-    width: 250px;
-    padding: 10px 0px 10px 5px;
-  }
+
   .imgFooter {
     display: none;
   }
@@ -2096,15 +2084,21 @@
   position: fixed;
   inset: 0;
   z-index: 999999999;
+
   display: flex;
   flex-direction: column;
+
   width: 100%;
   height: 100vh;
+
   overflow: hidden;
+
   background:
     radial-gradient(circle at 50% 42%, rgba(30, 45, 55, 0.45), transparent 45%),
     #050708;
+
   color: white;
+
   font-family: "Baloo Bhaijaan 2", sans-serif;
 }
 
@@ -2114,14 +2108,20 @@
 
 .galleryCinematic__header {
   position: absolute;
+
   top: 0;
   left: 0;
+
   width: 100%;
+
   padding: 30px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   z-index: 20;
+
   pointer-events: none;
 }
 
@@ -2130,21 +2130,29 @@
 .galleryCinematic__counter {
   display: flex;
   align-items: baseline;
+
   gap: 8px;
+
   font-size: 20px;
+
   letter-spacing: 3px;
+
   color: rgba(255, 255, 255, 0.85);
+
   pointer-events: auto;
 }
 
 .galleryCinematic__counter span:first-child {
   color: #37ff4b;
+
   font-size: 28px;
+
   font-weight: 600;
 }
 
 .galleryCinematic__counter small {
   color: rgba(255, 255, 255, 0.35);
+
   font-size: 14px;
 }
 
@@ -2153,28 +2161,41 @@
 .galleryCinematic__close {
   width: 48px;
   height: 48px;
+
   border-radius: 50%;
+
   border: 1px solid rgba(255, 255, 255, 0.2);
+
   background: rgba(255, 255, 255, 0.05);
+
   color: white;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-size: 20px;
+
   cursor: pointer;
+
   backdrop-filter: blur(10px);
+
   transition:
     transform 0.3s ease,
     background 0.3s ease,
     color 0.3s ease,
     border 0.3s ease;
+
   pointer-events: auto;
 }
 
 .galleryCinematic__close:hover {
   background: #37ff4b;
+
   border-color: #37ff4b;
+
   color: #050708;
+
   transform: rotate(90deg);
 }
 
@@ -2184,11 +2205,15 @@
 
 .galleryCinematic__main {
   position: relative;
+
   flex: 1;
+
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   min-height: 0;
 }
 
@@ -2198,11 +2223,14 @@
 
 .galleryCinematic__stage {
   position: relative;
+
   width: min(78vw, 1250px);
   height: min(70vh, 760px);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   overflow: visible;
 }
 
@@ -2211,9 +2239,11 @@
 .galleryCinematic__image {
   width: 100%;
   height: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   animation-duration: 0.45s;
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   animation-fill-mode: both;
@@ -2221,13 +2251,19 @@
 
 .galleryCinematic__image img {
   display: block;
+
   max-width: 100%;
   max-height: 100%;
+
   width: auto;
   height: auto;
+
   object-fit: contain;
+
   user-select: none;
+
   border-radius: 4px;
+
   box-shadow:
     0 35px 90px rgba(0, 0, 0, 0.75),
     0 10px 30px rgba(0, 0, 0, 0.45);
@@ -2250,6 +2286,7 @@
     opacity: 0;
     transform: translateX(70px) scale(0.97);
   }
+
   to {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -2261,6 +2298,7 @@
     opacity: 0;
     transform: translateX(-70px) scale(0.97);
   }
+
   to {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -2273,21 +2311,34 @@
 
 .galleryCinematic__arrow {
   position: absolute;
+
   top: 50%;
+
   transform: translateY(-50%);
+
   width: 54px;
   height: 54px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 50%;
+
   border: 1px solid rgba(255, 255, 255, 0.15);
+
   background: rgba(0, 0, 0, 0.35);
+
   backdrop-filter: blur(12px);
+
   color: rgba(255, 255, 255, 0.8);
+
   font-size: 18px;
+
   cursor: pointer;
+
   z-index: 10;
+
   transition:
     transform 0.3s ease,
     background 0.3s ease,
@@ -2305,13 +2356,17 @@
 
 .galleryCinematic__arrow:hover:not(:disabled) {
   background: #37ff4b;
+
   border-color: #37ff4b;
+
   color: #050708;
+
   transform: translateY(-50%) scale(1.1);
 }
 
 .galleryCinematic__arrow:disabled {
   opacity: 0.15;
+
   cursor: default;
 }
 
@@ -2321,21 +2376,33 @@
 
 .galleryCinematic__info {
   position: absolute;
+
   bottom: 150px;
+
   left: 50%;
+
   transform: translateX(-50%);
+
   display: flex;
+
   align-items: center;
+
   gap: 15px;
+
   width: 180px;
+
   color: rgba(255, 255, 255, 0.7);
+
   font-size: 13px;
+
   letter-spacing: 3px;
 }
 
 .galleryCinematic__line {
   flex: 1;
+
   height: 1px;
+
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35));
 }
 
@@ -2349,29 +2416,41 @@
 
 .galleryCinematic__controls {
   position: absolute;
+
   right: 40px;
   bottom: 145px;
+
   z-index: 15;
 }
 
 .galleryCinematic__play {
   width: 42px;
   height: 42px;
+
   border-radius: 50%;
+
   border: 1px solid rgba(255, 255, 255, 0.18);
+
   background: rgba(255, 255, 255, 0.04);
+
   color: rgba(255, 255, 255, 0.7);
+
   cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: 0.3s;
 }
 
 .galleryCinematic__play:hover {
   background: #37ff4b;
+
   color: black;
+
   border-color: #37ff4b;
+
   transform: scale(1.08);
 }
 
@@ -2381,13 +2460,20 @@
 
 .galleryCinematic__filmstrip {
   position: relative;
+
   width: 100%;
+
   height: 125px;
+
   flex-shrink: 0;
+
   padding: 15px 35px 25px;
+
   overflow-x: auto;
   overflow-y: hidden;
+
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
+
   scrollbar-width: thin;
   scrollbar-color: #37ff4b transparent;
 }
@@ -2396,11 +2482,17 @@
 
 .galleryCinematic__filmstripTrack {
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 10px;
+
   width: max-content;
+
   min-width: 100%;
+
   height: 100%;
 }
 
@@ -2410,17 +2502,28 @@
 
 .galleryCinematic__thumbnail {
   position: relative;
+
   flex-shrink: 0;
+
   width: 105px;
   height: 70px;
+
   padding: 0;
+
   border: 1px solid rgba(255, 255, 255, 0.08);
+
   border-radius: 3px;
+
   overflow: hidden;
+
   background: #0c0f11;
+
   cursor: pointer;
+
   opacity: 0.35;
+
   transform: scale(0.92);
+
   transition:
     opacity 0.3s ease,
     transform 0.3s ease,
@@ -2431,14 +2534,19 @@
 .galleryCinematic__thumbnail img {
   width: 100%;
   height: 100%;
+
   display: block;
+
   object-fit: cover;
+
   transition: 0.3s;
 }
 
 .galleryCinematic__thumbnail:hover {
   opacity: 0.8;
+
   transform: scale(0.98);
+
   border-color: rgba(55, 255, 75, 0.5);
 }
 
@@ -2446,11 +2554,16 @@
 
 .galleryCinematic__thumbnail span {
   position: absolute;
+
   left: 6px;
   bottom: 4px;
+
   font-size: 10px;
+
   letter-spacing: 1px;
+
   color: white;
+
   text-shadow: 0 1px 4px black;
 }
 
@@ -2458,8 +2571,11 @@
 
 .galleryCinematic__thumbnail--active {
   opacity: 1;
+
   transform: scale(1.08);
+
   border-color: #37ff4b;
+
   box-shadow:
     0 0 0 1px rgba(55, 255, 75, 0.25),
     0 0 20px rgba(55, 255, 75, 0.18);
@@ -2483,12 +2599,32 @@
 
 .galleryCinematic__filmstrip::-webkit-scrollbar-thumb {
   background: #37ff4b;
+
   border-radius: 10px;
 }
 
 /* =========================================================
    TABLET
 ========================================================= */
+
+@media screen and (max-width: 1000px) {
+  .galleryCinematic__stage {
+    width: 82vw;
+    height: 68vh;
+  }
+
+  .galleryCinematic__arrow--left {
+    left: 15px;
+  }
+
+  .galleryCinematic__arrow--right {
+    right: 15px;
+  }
+
+  .galleryCinematic__filmstripTrack {
+    justify-content: flex-start;
+  }
+}
 
 /* =========================================================
    MOBILE
@@ -2498,52 +2634,65 @@
   .galleryCinematic__header {
     padding: 18px 20px;
   }
+
   .galleryCinematic__counter {
     font-size: 15px;
     gap: 5px;
   }
+
   .galleryCinematic__counter span:first-child {
     font-size: 22px;
   }
+
   .galleryCinematic__close {
     width: 42px;
     height: 42px;
     font-size: 17px;
   }
+
   .galleryCinematic__main {
     padding-top: 25px;
   }
+
   .galleryCinematic__stage {
     width: 94vw;
     height: 64vh;
   }
+
   .galleryCinematic__arrow {
     width: 42px;
     height: 42px;
     font-size: 15px;
   }
+
   .galleryCinematic__arrow--left {
     left: 8px;
   }
+
   .galleryCinematic__arrow--right {
     right: 8px;
   }
+
   .galleryCinematic__info {
     bottom: 125px;
     width: 130px;
   }
+
   .galleryCinematic__controls {
     right: 20px;
     bottom: 120px;
   }
+
   .galleryCinematic__play {
     width: 38px;
     height: 38px;
   }
+
   .galleryCinematic__filmstrip {
     height: 100px;
     padding: 10px 15px 18px;
   }
+
   .galleryCinematic__thumbnail {
     width: 78px;
     height: 52px;
@@ -2558,23 +2707,29 @@
   .galleryCinematic__stage {
     height: 60vh;
   }
+
   .galleryCinematic__arrow {
     width: 38px;
     height: 38px;
   }
+
   .galleryCinematic__arrow--left {
     left: 5px;
   }
+
   .galleryCinematic__arrow--right {
     right: 5px;
   }
+
   .galleryCinematic__thumbnail {
     width: 70px;
     height: 48px;
   }
+
   .galleryCinematic__info {
     display: none;
   }
+
   .galleryCinematic__controls {
     bottom: 112px;
   }
@@ -2637,6 +2792,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+
   transition:
     transform 1s cubic-bezier(0.2, 0.7, 0.2, 1),
     filter 0.7s ease;
@@ -2654,6 +2810,7 @@
 .cinematicImageOverlay {
   position: absolute;
   inset: 0;
+
   background:
     linear-gradient(
       90deg,
@@ -2662,6 +2819,7 @@
       rgba(0, 0, 0, 0.15)
     ),
     linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 45%);
+
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
@@ -2672,16 +2830,23 @@
   position: absolute;
   left: 35px;
   bottom: 35px;
+
   display: flex;
   align-items: center;
+
   min-width: 300px;
   height: 75px;
+
   padding: 0;
+
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(12px);
+
   color: white;
+
   cursor: pointer;
+
   transition:
     background 0.4s ease,
     border 0.4s ease,
@@ -2692,6 +2857,7 @@
   background: rgba(55, 255, 75, 0.92);
   border-color: #37ff4b;
   color: black;
+
   transform: translateY(-5px);
 }
 
@@ -2700,10 +2866,13 @@
 .cinematicTriggerIcon {
   width: 75px;
   height: 75px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-right: 1px solid rgba(255, 255, 255, 0.2);
+
   font-size: 22px;
 }
 
@@ -2718,22 +2887,29 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
   padding: 0 22px;
+
   flex: 1;
+
   text-align: left;
 }
 
 .cinematicTriggerText strong {
   font-family: "Baloo Bhaijaan 2", sans-serif;
+
   font-size: 15px;
   letter-spacing: 2px;
 }
 
 .cinematicTriggerText small {
   margin-top: 2px;
+
   font-family: Arial, sans-serif;
+
   font-size: 10px;
   letter-spacing: 1px;
+
   opacity: 0.55;
 }
 
@@ -2745,10 +2921,13 @@
 
 .cinematicTriggerArrow {
   width: 60px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-size: 20px;
+
   transition: transform 0.4s ease;
 }
 
@@ -2760,17 +2939,25 @@
 
 .cinematicImageCounter {
   position: absolute;
+
   top: 30px;
   right: 30px;
+
   width: 65px;
   height: 65px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border: 1px solid rgba(255, 255, 255, 0.25);
+
   background: rgba(0, 0, 0, 0.35);
+
   backdrop-filter: blur(8px);
+
   font-family: "Baloo Bhaijaan 2", sans-serif;
+
   font-size: 18px;
   letter-spacing: 2px;
 }
@@ -2786,14 +2973,18 @@
 .cinematicProgress {
   width: 100%;
   height: 2px;
+
   background: rgba(255, 255, 255, 0.1);
+
   overflow: hidden;
 }
 
 .cinematicProgress span {
   display: block;
   height: 100%;
+
   background: #37ff4b;
+
   transition: width 0.5s ease;
 }
 
@@ -2802,10 +2993,14 @@
 .cinematicFooterInfo {
   display: flex;
   justify-content: space-between;
+
   margin-top: 12px;
+
   font-family: "Baloo Bhaijaan 2", sans-serif;
+
   font-size: 10px;
   letter-spacing: 2px;
+
   opacity: 0.35;
 }
 
@@ -2819,19 +3014,23 @@
     margin-top: 3rem;
     margin-bottom: 5rem;
   }
+
   .cinematicImageWrapper {
     height: 60vh;
   }
+
   .cinematicGalleryTrigger {
     left: 20px;
     bottom: 20px;
     min-width: 270px;
     height: 65px;
   }
+
   .cinematicTriggerIcon {
     width: 65px;
     height: 65px;
   }
+
   .cinematicImageCounter {
     top: 20px;
     right: 20px;
@@ -2849,19 +3048,24 @@
     width: 94%;
     margin-top: 2.5rem;
   }
+
   .cinematicGalleryHeader {
     gap: 10px;
   }
+
   .cinematicGalleryHeader span {
     font-size: 11px;
     letter-spacing: 2px;
   }
+
   .cinematicGalleryHeader small {
     font-size: 9px;
   }
+
   .cinematicImageWrapper {
     height: 55vh;
   }
+
   .cinematicGalleryTrigger {
     left: 15px;
     right: 15px;
@@ -2870,24 +3074,30 @@
     min-width: 0;
     height: 65px;
   }
+
   .cinematicTriggerIcon {
     width: 55px;
     height: 65px;
     font-size: 18px;
   }
+
   .cinematicTriggerText {
     padding: 0 15px;
   }
+
   .cinematicTriggerText strong {
     font-size: 12px;
     letter-spacing: 1px;
   }
+
   .cinematicTriggerText small {
     font-size: 9px;
   }
+
   .cinematicTriggerArrow {
     width: 45px;
   }
+
   .cinematicImageCounter {
     top: 15px;
     right: 15px;
@@ -2895,6 +3105,7 @@
     height: 48px;
     font-size: 14px;
   }
+
   .cinematicFooterInfo {
     font-size: 8px;
   }
@@ -2910,125 +3121,237 @@
   transform: scale(1.03);
 }
 
-@media (max-width: 600px) {
+
+/* =========================================================
+   RESPONSIVE CLEANUP 2026
+   Agregar al FINAL del archivo para sobrescribir reglas viejas
+   ========================================================= */
+
+:root {
+  --bg-dark: #08131d;
+  --bg-mid: #102030;
+  --bg-light: #13283a;
+  --primary: #7cff3a;
+  --primary-soft: rgba(124, 255, 58, 0.15);
+  --text: #ffffff;
+  --text-soft: #c4d3dc;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { overflow-x: hidden; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header {
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.vidHeader {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.45);
+}
+
+.articleHeader {
+  z-index: 2;
+  padding: 120px 20px 40px;
+}
+
+.articleHeader h1 {
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1.1;
+}
+
+.divHeader div {
+  width: min(900px, 100%);
+  margin-inline: auto;
+}
+
+.divHeader span {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 3rem;
+  align-items: center;
+  padding: 80px 24px;
+}
+
+.aboutUs section { height: auto; }
+
+.aboutUs img {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  border-radius: 18px;
+  transform: none;
+}
+
+.aboutUsText {
+  width: 100%;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.aboutUsText h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.aboutUsText span {
+  padding: 0;
+  line-height: 1.8;
+}
+
+.servicio { padding: 32px 24px; }
+
+.servicio p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.icono svg { color: var(--primary); }
+
+.componentFooter {
+  grid-template-columns: minmax(260px, 340px) 1fr;
+  gap: 4rem;
+  padding: 80px 24px;
+}
+
+.footerInfo { padding: 0; }
+
+.footerInfo h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.footerDescripcion {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.footerContact a {
+  padding: 16px 18px;
+  gap: 16px;
+}
+
+.footerContact span { font-size: 1rem; }
+
+@media (max-width: 992px) {
+  .sectionHeader section,
+  .sectionHeaderShortcut section {
+    width: 90%;
+  }
+
+  .aboutUs {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .indexTres div {
+    grid-template-columns: 1fr;
+  }
+
   .componentFooter {
-    padding: 50px 20px;
-    gap: 40px;
-  }
-
-  /* FOTO */
-
-  .footerFoto {
-    width: 100%;
-  }
-
-  .imgFooter {
-    width: 85%;
-    max-width: 300px;
-  }
-
-  /* INFORMACIÓN */
-
-  .footerInfo {
-    padding: 0;
-  }
-
-  .footerTag {
-    font-size: 11px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-  }
-
-  .footerInfo h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .footerInfo h2::after {
-    width: 70px;
-    height: 3px;
-    margin-top: 10px;
-  }
-
-  .footerDescripcion {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-  }
-
-  /* CONTACTOS */
-
-  .footerContact {
-    gap: 12px;
-  }
-
-  .footerContact a {
-    padding: 12px 14px;
-    gap: 14px;
-    border-radius: 12px;
-  }
-
-  .footerContact i {
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
-    font-size: 18px;
-  }
-
-  .footerContact small {
-    font-size: 10px;
-  }
-
-  .footerContact span {
-    font-size: 14px;
-  }
-
-  /* MAPA */
-
-  .footerMapa {
-    height: 250px;
-    width: 110%;
-    margin-left: -5%;
-  }
-
-  .coverageText {
-    font-size: 10px;
+    margin-inline: auto;
   }
 }
 
-/* ========================================================= */
-/* FOOTER - CELULAR PEQUEÑO */
-/* ========================================================= */
+@media (max-width: 768px) {
+  .headerMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+  }
 
-@media (max-width: 400px) {
+  .sectionHeader,
+  .sectionHeaderShortcut {
+    display: none;
+  }
+
+  .articleHeader {
+    padding-top: 100px;
+  }
+
+  .articleHeader h1 {
+    font-size: 2.4rem;
+  }
+
+  .divHeader div { width: 100%; }
+
+  .divHeaderDos {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .divHeaderDos div {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .indexDos {
+    padding: 60px 20px;
+  }
+
+  .indexDos h2 {
+    font-size: 2rem;
+  }
+
+  .article1 div,
+  .article2 div {
+    padding: 0 20px;
+  }
+
   .componentFooter {
-    padding: 40px 15px;
+    padding: 60px 20px;
+    gap: 2.5rem;
   }
 
-  .footerInfo h2 {
-    font-size: 25px;
+  .imgFooter {
+    display: block;
+    max-width: 260px;
   }
 
-  .footerDescripcion {
-    font-size: 14px;
+  .footerContact a:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .articleHeader h1 {
+    font-size: 2rem;
+  }
+
+  .divHeader span {
+    font-size: 0.95rem;
   }
 
   .footerContact a {
-    padding: 10px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .footerContact i {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    font-size: 16px;
-  }
-
-  .footerContact span {
-    font-size: 13px;
-  }
-
-  .footerMapa {
-    height: 220px;
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
   }
 }
