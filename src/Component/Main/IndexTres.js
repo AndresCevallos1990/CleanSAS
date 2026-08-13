@@ -84,7 +84,7 @@ export const IndexTres = () => {
                 <div className='indexTresImage'>
 
                     <img
-                        src='https://res.cloudinary.com/dt4unqzpv/image/upload/v1748957574/WhatsApp_Image_2025-06-02_at_23.01.28_dircgp.jpg'
+                        src='https://res.cloudinary.com/drfdelucd/image/upload/v1786631740/WhatsApp_Image_2026-08-07_at_15.44.39_ghgwlb.jpg'
                         alt=''
                     />
 
