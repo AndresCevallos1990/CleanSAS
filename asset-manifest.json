@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/CleanSAS/static/css/main.23732939.css",
-    "main.js": "/CleanSAS/static/js/main.fb3b6267.js",
-    "static/js/488.103417aa.chunk.js": "/CleanSAS/static/js/488.103417aa.chunk.js",
-    "static/media/bootstrap-icons.woff?": "/CleanSAS/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/CleanSAS/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "index.html": "/CleanSAS/index.html",
-    "main.23732939.css.map": "/CleanSAS/static/css/main.23732939.css.map",
-    "main.fb3b6267.js.map": "/CleanSAS/static/js/main.fb3b6267.js.map",
-    "488.103417aa.chunk.js.map": "/CleanSAS/static/js/488.103417aa.chunk.js.map"
+    "main.css": "/static/css/main.94757ac4.css",
+    "main.js": "/static/js/main.83ae3e58.js",
+    "static/js/488.103417aa.chunk.js": "/static/js/488.103417aa.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/index.html",
+    "main.94757ac4.css.map": "/static/css/main.94757ac4.css.map",
+    "main.83ae3e58.js.map": "/static/js/main.83ae3e58.js.map",
+    "488.103417aa.chunk.js.map": "/static/js/488.103417aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23732939.css",
-    "static/js/main.fb3b6267.js"
+    "static/css/main.94757ac4.css",
+    "static/js/main.83ae3e58.js"
   ]
 }
